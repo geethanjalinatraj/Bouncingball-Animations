@@ -1,0 +1,51 @@
+/* body{
+    background-color: #AFD198;
+} */
+
+.box{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #903769;
+}
+
+.ball{
+    background-color: sandybrown;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.box:hover .ball{
+    animation: ball 4s linear infinite;
+}
+@keyframes ball {
+    0%{
+        background-color: tomato;
+        top: 0;
+        left: 40%;
+    }
+    25%{
+        background-color: yellow;
+        top: 40%;
+        left: 0;
+    }
+    50%{
+        background-color: brown;
+        top: 80%;
+        left: 40%;
+
+    }
+    75%{
+        background-color: blue;
+        top: 40%;
+        left: 80%;
+    }
+    100%{
+        background-color: green;
+        top: 0;
+        left: 40%;
+    }
+}
